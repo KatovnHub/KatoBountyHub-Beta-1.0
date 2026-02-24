@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KatoBountyHub | Official Loader</title>
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden; }
+        .card { background-color: #161b22; padding: 40px; border-radius: 15px; border: 1px solid #30363d; box-shadow: 0 0 20px rgba(255, 100, 0, 0.2); text-align: center; width: 90%; max-width: 450px; }
+        h1 { color: #ff6400; font-size: 26px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        p { color: #8b949e; font-size: 14px; margin-bottom: 25px; }
+        .code-container { background-color: #010409; padding: 20px; border-radius: 8px; border: 1px solid #ff6400; position: relative; margin-bottom: 25px; }
+        code { font-family: 'Courier New', Courier, monospace; color: #ffa500; font-size: 13px; word-break: break-all; display: block; line-height: 1.6; }
+        .copy-btn { background: linear-gradient(45deg, #ff6400, #ffae00); color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; font-weight: bold; font-size: 16px; transition: 0.4s; box-shadow: 0 4px 15px rgba(255, 100, 0, 0.3); }
+        .copy-btn:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(255, 100, 0, 0.5); }
+        .discord-link { margin-top: 25px; display: block; color: #58a6ff; text-decoration: none; font-size: 14px; }
+        .discord-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>📜 Loadstring</h1>
+        <p>Contents can not be displayed on browser • KatoBountyHub</p>
+        <div class="code-container">
+            <code id="loader">loadstring(game:HttpGet("https://raw.githubusercontent.com/KatovnHub/KatoBountyHub-Beta-1.0/refs/heads/main/KatoBountyHub.lua"))()</code>
+        </div>
+        <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+        <a href="https://discord.gg/Nz9Drwczg" class="discord-link">Join Discord Support</a>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            var copyText = document.getElementById("loader").innerText;
+            navigator.clipboard.writeText(copyText).then(() => {
+                alert("Đã copy thành công! Dán vào Executor của bạn.");
+            });
+        }
+    </script>
+</body>
+</html>
