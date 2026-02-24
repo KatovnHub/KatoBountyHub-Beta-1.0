@@ -1,1 +1,0 @@
-# KatoBountyHub-Beta-1.0
